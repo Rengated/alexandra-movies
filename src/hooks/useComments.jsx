@@ -19,11 +19,5 @@ export const useComments = (id) => {
     }
   };
 
-  const deleteComment = (comment) => {
-    const newComments = comments.filter((item) => item != comment);
-    setComments(newComments);
-    localStorage.setItem(id, JSON.stringify(newComments));
-  };
-
-  return { comments, updateComments, deleteComment };
+  return { comments, updateComments };
 };
