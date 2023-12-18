@@ -65,7 +65,8 @@ export const Card: FC<CardProps> = ({
         <span className="text-extrabold text-xl text-rose-400">
           {title} {year}
         </span>
-        <span>{description?.slice(0, 60)}...</span>
+        {/* <span>{description?.slice(0, 60)}...</span> */}
+        <span className="description">{description}</span>
         <span className="mt-auto font-extrabold">{genre}</span>
       </div>
     </div>
